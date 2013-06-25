@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="chatPanel" class="view.ChatPanel"/>
+    <bean id="field" class="model.Field" init-method="init">
+        <property name="fieldView" ref="fieldView"/>
+    </bean>
+    <bean id="fieldController" class="controller.FieldController">
+        <constructor-arg index="0" ref="field"/>
+    </bean>
+
+    <bean id="buttonController" class="controller.ButtonController">
+        <constructor-arg index="0" ref="field"/>
+    </bean>
+    <bean id="fieldView" class="view.FieldView" init-method="init">
+        <constructor-arg index="0" value="800"/>
+        <constructor-arg index="1" value="800"/>
+        <property name="fieldController" ref="fieldController"/>
+    </bean>
+    <bean id="game" class="view.Game" init-method="init">
+        <property name="chatPanel" ref="chatPanel"/>
+        <property name="fieldView" ref="fieldView"/>
+        <property name="buttonController" ref="buttonController"/>
+    </bean>
+</beans>

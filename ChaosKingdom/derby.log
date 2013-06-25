@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Mon Jun 24 02:04:17 ICT 2013:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-013f-726c-25bf-000006f55350 
+on database directory C:\Users\Ngoc\Desktop\maxdota_chaos\ChaosKingdom\database\ChaosKingdom  with class loader sun.misc.Launcher$AppClassLoader@16bd4dc2 
+Loaded from file:/C:/Users/Ngoc/Desktop/maxdota_chaos/ChaosKingdom/libs/derby/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_01-b08
+user.dir=C:\Users\Ngoc\Desktop\maxdota_chaos\ChaosKingdom
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

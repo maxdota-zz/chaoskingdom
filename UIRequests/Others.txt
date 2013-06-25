@@ -1,0 +1,3 @@
+Fix the Game Frame, Field & Chat Panel position. Find exact Field height and width (put them in Utility class)
+
+Show EXP and Point when creep dies
